@@ -13,7 +13,7 @@
 
 <nav> 
 	<img class="logo" src="duggup_logo.jpg" alt="logo"/>
-	<h1 style="font-size: 18px;">duggup</h1>
+	<h1 class="companyName" style="font-size: 18px;">duggup</h1>
 	<ul class="nav">
 		<li class = "Home">
 			<div class="Icon_div"><Icon icon="ri:home-7-line" style="color: dark-gray"/></div>
@@ -61,11 +61,11 @@
 	<div class = "userIcon">
 		  <DropdownMenu.Root>
 			<DropdownMenu.Trigger asChild let:builder>
-			  <Button builders={[builder]}><Avatar.Root>
-				<Avatar.Image src="https://github.com/shadcn.png" alt="@shadcn" />
+			  <Button builders={[builder]}><Avatar.Root  class="border border-black">
+				<Avatar.Image src="krishna_kiran.jpeg" alt="@shadcn" />
 					<Avatar.Fallback>CN</Avatar.Fallback>
 			  	</Avatar.Root>
-				<h3 class = "name">Ankita Dhar</h3>
+				<h3 class = "name">Krishna Kiran</h3>
 				<div class = "downArrow"><Icon icon="iconamoon:arrow-down-2-light" width="20" height="20"  style="color: #616161" /></div>
 			  </Button>
 			</DropdownMenu.Trigger>
@@ -98,11 +98,11 @@
 <div class="UserDescription">
 	<div class = "UserIconAndName">
 		<Avatar.Root class="w-28 h-28 border-4 border-gray-90">
-			<Avatar.Image src="https://github.com/shadcn.png" alt="@shadcn" />
+			<Avatar.Image src="krishna_kiran.jpeg" alt="@shadcn" />
 			<Avatar.Fallback>CN</Avatar.Fallback>
 		</Avatar.Root>
-		<h3 class = "profileFirstName">Ankita</h3>
-		<h3 class = "profileSurName">Dhar</h3>
+		<h3 class = "profileFirstName">Krishna</h3>
+		<h3 class = "profileSurName">Kiran</h3>
 	</div>
 	<div class= "UserDescriptionDetail">
 		<p>Co-Founder and CEO at Duggup - Social network for people in tech. Ex-Amazon Head of Engineering. I write hot-takes on building a business, shipping delightful products and accelerating product and career growth.</p>
@@ -211,6 +211,9 @@
 <slot />
 
 <style>
+	.companyName{
+		margin-left:1px;
+	}
 	nav {
 		display: flex;
 	}
